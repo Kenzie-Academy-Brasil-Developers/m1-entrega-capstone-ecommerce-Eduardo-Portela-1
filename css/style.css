@@ -10,15 +10,16 @@
 body{
     font-family: 'Inter', sans-serif;
     font-size: 14px;
+    background-color: rgba(128, 128, 128, 0.164);
 }
 
 /*Header*/
 .cabecalho{
     height: 50px;
-    box-shadow: -1px -4px 9px 0px;
+    box-shadow: -1px -2px 9px 0px;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    background-color: white;
+    background-color: rgba(128, 128, 128, 0.295);
 }
 
 .container{
@@ -56,7 +57,6 @@ body{
 
 .produtos{
     width: 70%;
-    box-shadow: 0px 0px 3px 0px;
 }
 
 .produtos .lista_De_Produtos{
@@ -71,11 +71,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center ;
-    background-color: #82828236;
+    /*background-color: #82828236;*/
     overflow: hidden;
     margin: 10px 10px;
     box-shadow: 0px 0px 5px 0px;
     border-radius: 3px;
+    padding-bottom: 5px;
 }
 
 .produtos .lista_De_Produtos .card:hover{
@@ -85,14 +86,18 @@ body{
 
 /*Editando cards*/
 .lista_De_Produtos .card img{
-    height: 39.5%;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 #descricoes{
-    width: 98.5%;
+    width: 100%;
     height: 60%;
     background-color: white;
     padding-left: 10px;
+    padding-bottom: 5px;
 
 }
 
@@ -235,4 +240,12 @@ body{
 
 #hidden{
     display: none;
+}
+
+.carrinho_De_Compras .finalizar_compra{
+    width: 100%;
+    height: 35px;
+    background-color: #37268C;
+    color: white;
+    border: none;
 }

@@ -1,9 +1,9 @@
 //Função para separar as listas
 function separarListasPorCategoria(lista){
     lista.forEach(produto => {
-          produto.tag[0] == "Acessórios" ? acessorios.push(produto)
-        : produto.tag[0] == "calcados"   ? calcados.push(produto) 
-        : camisetas.push(produto)
+          produto.tag[0] == "Periféricos" ? perifericos.push(produto)
+        : produto.tag[0] == "Hardware"   ? hardware.push(produto)
+        : monitores.push(produto)
     });
 }
 separarListasPorCategoria(data)
@@ -13,12 +13,12 @@ const container = document.querySelector(".container")
 const logoMenu = document.createElement("div")
 logoMenu.setAttribute("class","logo_menu")
 logoMenu.innerHTML = `
-<h1>Weartake</h1>
+<h1>TechSell</h1>
     <nav class="navegacao">
         <a href="" class="todos">Todos</a>
-        <a href="" class="acessorios">Acessórios</a>
-        <a href="" class="calcados">Calçados</a>
-        <a href="" class="camisetas">Camisetas</a>
+        <a href="" class="perifericos">Periféricos</a>
+        <a href="" class="hardware">Hardware</a>
+        <a href="" class="monitores">Monitores</a>
     </nav>
 `
 container.appendChild(logoMenu)
@@ -29,10 +29,10 @@ container.addEventListener("click",menuNav)
 function menuNav(event){
     event.preventDefault()
     let menuTarget = event.target
-      menuTarget.className == "todos"     ? listarProdutos(data,vitrine) 
-    : menuTarget.className =="acessorios" ? listarProdutos(acessorios,vitrine) 
-    : menuTarget.className == "calcados"  ? listarProdutos(calcados,vitrine) 
-    : menuTarget.className == "camisetas" ?listarProdutos(camisetas,vitrine) :""
+      menuTarget.className == "todos"       ? listarProdutos(data,vitrine) 
+    : menuTarget.className == "perifericos" ? listarProdutos(perifericos,vitrine) 
+    : menuTarget.className == "hardware"    ? listarProdutos(hardware,vitrine) 
+    : menuTarget.className == "monitores"   ?listarProdutos(monitores,vitrine) :""
     
     vitrine.style.justifyContent = "flex-start"
 }
@@ -84,13 +84,13 @@ function pequisar(){
         input = document.querySelector("#pesquisar").value.toLowerCase()
         for(let i =0; i < data.length; i++){
             let produtoAtual = data[i]
-            if(input == produtoAtual.nameItem.toLowerCase()){
-                resPesquisa.splice(0,1)
+            if(produtoAtual.nameItem.toLowerCase().includes(input)){
+                //resPesquisa.splice(0,3)
                 resPesquisa.push(produtoAtual)
-                return listarProdutos(resPesquisa,vitrine)
+                listarProdutos(resPesquisa,vitrine)
             }
         }
-        return alert("Nenhum produto com esse nome foi encontrado!")
+        resPesquisa = []   
     })
 }
 pequisar()
@@ -143,9 +143,11 @@ function adicionarAoCarrinho(){
                     if(carrinho.length == 0){
                         mostrarCarrinhoVazio()
                         TotalCompra.setAttribute("id","hidden")
+                        finalizar.setAttribute("id","hidden")
                     }else if (carrinho.length != 0){
                         calcularPrecoTotal(carrinho) 
                         TotalCompra.setAttribute("id","")
+                        finalizar.setAttribute("id","")
                     }
                     listarProdutoCarrinho(carrinho,listaCarrinho)
                 }
@@ -195,8 +197,10 @@ function remover(lista){
             if(lista.length != 0){
                 calcularPrecoTotal(lista) 
                 TotalCompra.setAttribute("id","")
+                finalizar.setAttribute("id","")
             }else if(lista.length == 0){
                 mostrarCarrinhoVazio()
+                finalizar.setAttribute("id","hidden")
                 TotalCompra.setAttribute("id","hidden")
             }
         })
@@ -217,7 +221,27 @@ mostrarCarrinhoVazio()
 
 
 
+let finalizar = document.querySelector(".finalizar_compra")
+    finalizar.addEventListener("click", function(){
+        alert("Obrigado por comprar no nosso site! Compra Finalizada.")
+    })
 
+/*function pequisar(){
+    let resPesquisa = []
+    let button = document.querySelector(".botao_pequisar")
+    button.addEventListener("click",function(){
+        input = document.querySelector("#pesquisar").value.toLowerCase()
+        for(let i =0; i < data.length; i++){
+            let produtoAtual = data[i]
+            if(input == produtoAtual.nameItem.toLowerCase()){
+                resPesquisa.splice(0,1)
+                resPesquisa.push(produtoAtual)
+                return listarProdutos(resPesquisa,vitrine)
+            }
+        }
+        return alert("Nenhum produto com esse nome foi encontrado!")
+    })
+}*/
 
 
 
