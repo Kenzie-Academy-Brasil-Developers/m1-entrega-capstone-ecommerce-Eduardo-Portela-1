@@ -13,7 +13,7 @@ const data = [
   },
   {
     id: 2,
-    img: "../img/teclado.jpg",
+    img: "img/teclado.jpg",
     nameItem: "Teclado Gamer Redragon",
     description:
       "Teclado Gamer Redragon Membrana Dyaus 2, ABNT2, RGB, 11 Teclas Multimídia, Preto ",
@@ -23,7 +23,7 @@ const data = [
   },
   {
     id: 3,
-    img: "../img/fone.jpg",
+    img: "img/fone.jpg",
     nameItem: "Headset Gamer HyperX",
     description:
       "OHeadset Gamer HyperX CloudX Stingeré ideal para jogadores que procuram leveza e conforto",
@@ -33,7 +33,7 @@ const data = [
   },
   {
     id: 4,
-    img: "../img/placa_video.jpg",
+    img: "img/placa_video.jpg",
     nameItem: "Placa de Vídeo Asus NVIDIA GeForce GTX 1050 Ti",
     description:
       "Tenha um desenhempenho com ótimo custo benefício",
@@ -43,7 +43,7 @@ const data = [
   },
   {
     id: 5,
-    img: "../img/memoria.jpg",
+    img: "img/memoria.jpg",
     nameItem: "Memória Kingston, Hyperx Fury",
     description:
       "Memória Kingston Hyperx Fury Black 8gb Ddr4 2400mhz Ddr4",
@@ -53,7 +53,7 @@ const data = [
   },
   {
     id: 6,
-    img: "../img/fonte.jpg",
+    img: "img/fonte.jpg",
     nameItem: "Fonte 450W Corsair, CX450 Preta",
     description:
       "Fonte 450W Corsair, CX450, 80 Plus Bronze - CP-9020120-BR",
@@ -62,7 +62,7 @@ const data = [
     tag: ["Hardware"],
   }, {
     id: 7,
-    img: "../img/monitor_samsung.jpg",
+    img: "img/monitor_samsung.jpg",
     nameItem: "Monitor Gamer Samsung Odyssey",
     description:
       "Monitor Gamer Samsung Odyssey G3 24”, FHD, 144 Hz, 1ms, com ajuste de altura, HDMI, DP, VGA, Freesync",
@@ -71,7 +71,7 @@ const data = [
     tag: ["Monitores"],
   }, {
     id: 8,
-    img: "../img/monitor_concordia.jpg",
+    img: "img/monitor_concordia.jpg",
     nameItem: "Monitor Gamer Concórdia PCFort",
     description:
       "O novo Monitor Gamer PCFort H238F, com taxa de atualização de 165Hz e tempo de resposta de 1ms.",
@@ -80,7 +80,7 @@ const data = [
     tag: ["Monitores"],
   }, {
     id: 9,
-    img: "../img/monitor_acer.jpg",
+    img: "img/monitor_acer.jpg",
     nameItem: "Monitor Gamer Acer Nitro 165Hz",
     description:
       "Monitor Gamer Acer Nitro QG241Y S 23.8 LED Full HD, 165Hz, 1ms, HDMI/DisplayPort, FreeSync Premium",
