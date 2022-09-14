@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+/*Header*/
+.cabecalho{
+    height: 50px;
+    box-shadow: -1px -4px 9px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.logo_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navegacao a{
+    color: black;
+    font-weight: lighter;
+    padding-right: 12px;
+
+}
+
+.navegacao a:focus{
+    font-weight: bold;
+}
+
+.navegacao a:hover{
+    text-decoration: underline;
+}
+
+/*Main e seção de produtos*/
+.principal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.produtos{
+    width: 70%;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.produtos .lista_De_Produtos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.produtos .lista_De_Produtos .card{
+    width: 30%;
+    border: 1px solid #82828236;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    background-color: #82828236;
+    overflow: hidden;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 5px 0px;
+    border-radius: 3px;
+}
+
+.produtos .lista_De_Produtos .card:hover{
+    border: 1px solid #37268C;
+    transform: scale(1);
+}
+
+/*Editando cards*/
+.lista_De_Produtos .card img{
+    height: 39.5%;
+}
+
+#descricoes{
+    width: 98.5%;
+    height: 60%;
+    background-color: white;
+    padding-left: 10px;
+
+}
+
+.card #descricoes .categoria{
+    background-color: #2E245E ;
+    margin: 15px 0px;
+    padding: 3px;
+    color: white;
+    width: min-content;
+}
+
+.card #descricoes p{
+    margin: 10px 0px;
+}
+
+.card #descricoes .preco{
+    font-weight: bold;
+}
+
+.card #descricoes .descricao{
+    text-align: justify;
+    padding-right: 5px;
+}
+
+.card #descricoes a{
+    color: black;
+}
+
+.card #descricoes a:hover{
+    text-decoration: underline;
+    color: #2E245E;
+}
+
+/*seção de pesquisa e adicionar no carrinho*/
+
+
+.pesquisa_e_carrinho{
+    width: 28%;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.pesquisa_e_carrinho .pesquisar input{
+    width: 78%;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.pesquisa_e_carrinho .pesquisar button{
+    height: 35px;
+    padding: 5px;
+    background-color: #37268C;
+    color: white;
+    border: none;
+}
+
+.pesquisa_e_carrinho .carrinho_De_Compras{
+    margin-top: 20px;
+}
+
+.carrinho_De_Compras .Titulo{
+    display: flex;
+    background-color: #37268C;
+    height: 40px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pesquisa_e_carrinho .carrinho_De_Compras h4{
+   padding-right: 5px;
+}
+
+.pesquisa_e_carrinho .carrinho_De_Compras .carrinho{
+    width: 100%;
+    background-color: #82828236;
+    min-height: 200px;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+
+/*Itens do carrinho*/
+.carrinho_De_Compras{
+    font-size: 12px;
+}
+
+.card_Carrinho{
+    display: flex;
+    margin-top: 10px;
+}
+.card_Carrinho:hover{
+    border: 1px solid #37268C;
+}
+
+.card_Carrinho img{
+    max-width: 65px;
+    background-color: white;
+    margin: 0px 10px;
+}
+
+.card_Carrinho .descricaoCarrinho p{
+    margin-bottom: 10px;
+}
+
+.card_Carrinho .descricaoCarrinho a{
+    color: black;
+}
+
+.card_Carrinho .descricaoCarrinho a:hover{
+    color: #37268C;
+    text-decoration: underline;
+}
+
+/*valor e quantidade finais*/
+.carrinho_De_Compras .Total_compra{
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+}
+
+.carrinho_De_Compras .Total_compra .quantidade{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.carrinho_De_Compras .Total_compra .total{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.carrinho .lista_carrinho .carrinhoVazio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+}
+
+#hidden{
+    display: none;
+}

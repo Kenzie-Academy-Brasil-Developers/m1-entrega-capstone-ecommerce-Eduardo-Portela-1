@@ -62,3 +62,61 @@ const data = [
     tag: ["Camisetas"],
   },
 ];
+
+const acessorios = []
+const camisetas = []
+const calcados = []
+
+
+/*<div class="quantidade">
+                        <p>quantidade</p>
+                        <p>0</p>
+                    </div>
+                    <div class="total">
+                        <p>Total:</p>
+                        <p>200</p>
+                    </div>*/
+
+/*     <li class="cardCarrinho">
+                            <img src="img/camiseta_branca.svg" alt="">
+                            <div class="descricaoCarrinho">
+                                <p>Short-Sleeve T-Shirt</p>
+                                <p>R$ 100,00</p>
+                                <a href="">Remover Produto</a>
+                            </div>
+                        </li>
+                        */
+
+/*<ul class="listaDeProdutos">
+                <li class="card">
+                    <img src="../img/jaqueta.svg" alt="">
+                    <div id="descricoes">
+                        <p class="categoria">categoria</p>
+                        <h3 class="nome">Lightweight Jacket</h3>
+                        <p class="descricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+                        <p class="preco">R$ 100.00</p>
+                        <a href="#">Adicionar ao Carrinho</a>
+                    </div>
+                </li>
+                <li class="card">
+                    <img src="../img/jaqueta.svg" alt="">
+                    <div id="descricoes">
+                        <p class="categoria">categoria</p>
+                        <h3 class="nome">Lightweight Jacket</h3>
+                        <p class="descricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+                        <p class="preco">R$ 100</p>
+                        <a href="#">Adicionar ao Carrinho</a>
+                    </div>
+                </li>
+                <li class="card">
+                    <img src="../img/jaqueta.svg" alt="">
+                    <div id="descricoes">
+                        <p class="categoria">categoria</p>
+                        <h3 class="nome">Lightweight Jacket</h3>
+                        <p class="descricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+                        <p class="preco">R$ 100</p>
+                        <a href="#">Adicionar ao Carrinho</a>
+                    </div>
+                </li>
+           
+        */
