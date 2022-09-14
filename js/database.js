@@ -3,7 +3,7 @@
 const data = [
   {
     id: 1,
-    img: "../img/mouse.jpg",
+    img: "img/mouse.jpg",
     nameItem: "Mouse Gamer Logitech G403",
     description:
       "O G403 entra no ringue com a nova geração do sensor HERO 25K,IPS de 400",
